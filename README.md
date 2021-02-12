@@ -13,9 +13,10 @@ The sound engine is based on a TB-303 simulator found in **[overtone](https://gi
 art by **[ansimuz](https://ansimuz.itch.io/industrial-parallax-background?)**
 
 ## how to use
-k2 - previous control panel
-k3 - next control panel
-e1, e2, e3 - control the paramters in the control panel in focus
+
+* k2 - previous control panel
+* k3 - next control panel
+* e1, e2, e3 - control the paramters in the control panel in focus
 
 
 
