@@ -42,8 +42,11 @@ end
 
 
 function connect()
-  midi_signal_in = midi.connect(1)
-  midi_signal_in.event = on_midi_event
+  midi_device = {} -- container for connected midi devices
+  for i = 1,#midi.vports do -- query all ports
+    midi_device[i] = midi.connect(i) -- connect each device
+    midi_device[i].event = on_midi_event
+  end
 end
 
 function on_midi_event(data)
