@@ -31,6 +31,7 @@ local focus = 1
 -- Main
 
 function init()
+  
   connect()
   -- Render Style
   screen.level(15)
