@@ -130,11 +130,11 @@ function draw_art()
   else
     foreground_x = foreground_x + (1 * (cutoff/300))
   end
-  screen.display_png("/home/we/dust/code/lost_futures/art/bg.png", 0, 0)
-  screen.display_png("/home/we/dust/code/lost_futures/art/far_buildings.png", foreground_x/2, 0)
-  screen.display_png("/home/we/dust/code/lost_futures/art/far_buildings.png", foreground_x/2-viewport.width, 0)
-  screen.display_png("/home/we/dust/code/lost_futures/art/foreground.png", foreground_x, 0)
-  screen.display_png("/home/we/dust/code/lost_futures/art/foreground.png", foreground_x-viewport.width, 0)
+  screen.display_png(_path.this.path.."art/bg.png", 0, 0)
+  screen.display_png(_path.this.path.."art/far_buildings.png", foreground_x/2, 0)
+  screen.display_png(_path.this.path.."art/far_buildings.png", foreground_x/2-viewport.width, 0)
+  screen.display_png(_path.this.path.."art/foreground.png", foreground_x, 0)
+  screen.display_png(_path.this.path.."art/foreground.png", foreground_x-viewport.width, 0)
 end
 
 function draw_saw()
