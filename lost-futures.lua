@@ -31,7 +31,8 @@ local focus = 1
 -- Main
 
 function init()
-  
+  params:add_number('midi_ch', "MIDI channel", 0, 16, 0)
+
   connect()
   -- Render Style
   screen.level(15)
@@ -52,7 +53,9 @@ end
 
 function on_midi_event(data)
   msg = midi.to_msg(data)
-  play(msg)
+  if params:get('midi_ch') == 0 or msg.ch == params:get('midi_ch') then
+    play(msg)
+  end
 end
 
 function play(msg)
